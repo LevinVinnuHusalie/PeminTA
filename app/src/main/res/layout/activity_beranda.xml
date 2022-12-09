@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <FrameLayout
+        android:id="@+id/navbar"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#adb5bd"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <Button
+            android:id="@+id/btn_notes"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="+ New Notes"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_bg"
+            />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="15dp"
+            android:hint="Judul catatan 1"
+            />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="15dp"
+            android:hint="Judul catatan 2"
+            />
+
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Ketik judul disini..."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:hint="Ketik text disini..."
+        android:textColor="@color/black"
+        sty
+        android:textSize="12sp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/navbar"
+        app:layout_constraintTop_toBottomOf="@+id/judul"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
