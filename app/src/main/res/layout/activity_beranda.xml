@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -28,20 +29,24 @@
             android:background="@drawable/btn_bg"
             />
 
-        <EditText
+        <TextView
+            android:id="@+id/judulNote"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="15dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="25dp"
             android:hint="Judul catatan 1"
+
             />
 
-        <EditText
-            android:layout_width="150dp"
+
+        <Button
+            android:id="@+id/profil"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
-            android:layout_marginLeft="15dp"
-            android:hint="Judul catatan 2"
+            android:hint="Profil"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="15dp"
             />
 
 
@@ -68,7 +73,6 @@
         android:layout_marginLeft="15dp"
         android:hint="Ketik text disini..."
         android:textColor="@color/black"
-        sty
         android:textSize="12sp"
         android:textColorHint="@color/black"
         app:layout_constraintStart_toEndOf="@+id/navbar"
